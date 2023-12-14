@@ -3,9 +3,10 @@ os: linux
 files:
   -  source: /
      destination: /var/www/html
+     overwrite: yes
 hooks:
   AfterInstall:
     - location: scripts/set_owner
-      timeout: 5
+      timeout: 2
       runas: root
   
